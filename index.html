@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Expenses chart component</title>
+    <link href=" https://cdn.jsdelivr.net/npm/charts.css@1.1.0/dist/charts.min.css " rel="stylesheet">
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <!-- STYLES -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body class="body">
+    <main class="main">
+      <section class="main__myBalance">
+        <div>
+          <p>My balance</p>
+          <h2>$921.48</h2>
+        </div>
+        <img src="assets/images/logo.svg" alt="Logo">
+      </section>
+
+      <section class="DataTable">
+        <caption> <h1>Spending - Last 7 days </h1></caption>
+        <table class="charts-css column datasets-spacing-5 show-labels data-outside">
+          <tr class="trMon">
+            <th scope="row"> Mon </th>
+            <td class="tdMon tdBarra"> <span class="monData data"> Data </span> </td>
+          </tr>
+          <tr class="trTue">
+            <th scope="row"> Tue </th>
+            <td class="tdTue tdBarra"> <span class="tueData data"> Data </span> </td>
+          </tr>
+          <tr class="trWed">
+            <th scope="row"> Wed </th>
+            <td class="tdWen tdBarra"> <span class="wenData data"> Data </span> </td>
+          </tr>
+          <tr class="trThu">
+            <th scope="row"> Thu </th>
+            <td class="tdThu tdBarra"> <span class="thuData data"> Data </span> </td>
+          </tr>
+          <tr class="trFri">
+            <th scope="row"> Fri </th>
+            <td class="tdFri tdBarra"> <span class="friData data"> Data </span> </td>
+          </tr>
+          <tr class="trSat">
+            <th scope="row"> Sat </th>
+            <td class="tdSat tdBarra"> <span class="satData data"> Data </span> </td>
+          </tr>
+          <tr class="trSun">
+            <th scope="row"> Sun </th>
+            <td class="tdSun tdBarra"  style="--size: 0.6"> <span class="sunData data"> Data </span> </td>
+          </tr>
+        </table>
+
+        <br><hr><br>
+
+        <div class="flex flex-column">
+          <p>Total this month</p>
+
+          <div class="flex space-between">
+            <h2>$478.33</h2>
+  
+            <div>
+              <h4 class="text-right">+2.4%</h4>
+              <p class="text-right">from last month</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="assets/js/setValues.js" defer></script>
+    <script src="assets/js/mediaQueries.js" defer></script>
+  </body>
+</html>
